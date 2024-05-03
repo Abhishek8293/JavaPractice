@@ -50,6 +50,8 @@ public class LinkedListOperations {
 		}
 		
 		
+		System.out.println("Size of the linked list:--- "+linkedList.size());
+		
 
 		
 	}
