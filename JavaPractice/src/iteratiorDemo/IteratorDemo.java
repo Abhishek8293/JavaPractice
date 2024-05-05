@@ -18,7 +18,7 @@ public class IteratorDemo {
 
 		// Iterate over the elements using the Iterator
 		System.out.println("--------Iterating over the elements using Iterator--------");
-		while (iterator.hasNext()) {
+		while ( iterator.hasNext()) {
 			String element = iterator.next();
 			System.out.println(element);
 		}
