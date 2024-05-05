@@ -39,6 +39,8 @@ public class LinkedListOperations {
 		//checking if the linked list contains a specific element 
 		System.out.println(linkedList.contains("Mango"));
 		
+		System.out.println(linkedList.element());
+		
 		for(String val:linkedList) {
 			System.out.println( "Traversing :"+val);
 		}
