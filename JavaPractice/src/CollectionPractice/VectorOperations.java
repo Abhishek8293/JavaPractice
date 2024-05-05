@@ -47,10 +47,10 @@ public class VectorOperations {
 		System.out.println("---------------- USING ITERATOR -----------------");
 
 		Iterator<String> iterator = fruits.iterator();
-		
+
 		while (iterator.hasNext()) {
 			System.out.println(iterator.next());
-			
+
 		}
 
 	}
