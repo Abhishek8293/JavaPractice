@@ -21,6 +21,9 @@ public class LinkedHashSetOperations {
 
 	        // Get the size of the LinkedHashSet
 	        System.out.println("Size of LinkedHashSet: " + countries.size());
+	        
+	        //Check if set contains the item
+	        System.out.println("Contains 'India' : "+countries.contains("India"));
 
 	        // Remove an element by value
 	        countries.remove("China");
