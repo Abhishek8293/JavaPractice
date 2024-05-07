@@ -41,8 +41,8 @@ public class DeserializationDemo {
 }
 
 /*
- * If your Person class doesn't explicitly define serialVersionUID, Java
+ * If your Person class doesn't explicitly define "serialVersionUID", Java
  * generates one based on the class structure at that time. Any changes to the
  * class structure (adding/removing fields, methods, etc.) will generate a
- * different serialVersionUID.
+ * different "serialVersionUID".
  */
