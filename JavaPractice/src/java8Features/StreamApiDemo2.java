@@ -23,6 +23,7 @@ public class StreamApiDemo2 {
 		products.add(new Product(3, "Headphones"));
 		products.add(new Product(4, "Tablet"));
 		products.add(new Product(5, "Watch"));
+		products.add(new Product(6, "Speaker"));
 
 		// Filtering and collecting the product id which id is greater than 2
 		List<Integer> productIds = products.stream().filter(product -> product.id > 2).map(mapId -> mapId.id)
