@@ -25,6 +25,11 @@ public class StreamApiDemo {
         long count = numbers.stream()
                 .count();
         System.out.println("Total numbers: " + count);
+        
+        
+        numbers.stream()
+        .map(x -> x * x) // x -> x * x squares each number
+        .forEach(System.out::println);
 	}
 
 }
