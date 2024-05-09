@@ -14,6 +14,17 @@ public class StreamApiDemo {
 				.filter(x -> x % 2 == 0) // This line applies a filter operation to the stream using a lambda
 											// expression.
 				.forEach(System.out::println); // "println" is passed as a method reference
+		
+		
+		Integer firstEven = numbers.stream()
+                .filter(x -> x % 2 == 0)
+                .findFirst()
+                .orElse(0); 
+        System.out.println("First even number: " + firstEven);
+        
+        long count = numbers.stream()
+                .count();
+        System.out.println("Total numbers: " + count);
 	}
 
 }
