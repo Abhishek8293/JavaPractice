@@ -24,10 +24,15 @@ public class StreamApiDemo2 {
 		products.add(new Product(4, "Tablet"));
 		products.add(new Product(5, "Watch"));
 
-		// Filtering and collection the product which id is greater than 2
+		// Filtering and collecting the product id which id is greater than 2
 		List<Integer> productIds = products.stream().filter(product -> product.id > 2).map(mapId -> mapId.id)
 				.collect(Collectors.toList());
 
 		System.out.println(productIds);
+
+		//Filtering and Collecting the product name who contains "a"
+		List<String> prodList = products.stream().filter(product -> product.name.contains("a")).map(mapName ->mapName.name)
+				.collect(Collectors.toList());
+		System.out.println(prodList);
 	}
 }
